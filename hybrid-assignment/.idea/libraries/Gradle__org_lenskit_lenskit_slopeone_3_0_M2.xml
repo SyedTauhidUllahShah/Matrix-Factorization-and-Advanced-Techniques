@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.lenskit:lenskit-slopeone:3.0-M2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lenskit/lenskit-slopeone/3.0-M2/26ea4934e061e2c7c2fe07fba875ad3f99fcf3ae/lenskit-slopeone-3.0-M2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lenskit/lenskit-slopeone/3.0-M2/6416b187ce48f121c0a9da73eb638904667f274d/lenskit-slopeone-3.0-M2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

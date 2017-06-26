@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.lenskit:lenskit-api:3.0-M2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lenskit/lenskit-api/3.0-M2/f325aecbd7bdf630b18e1124f11309cf94fe4d36/lenskit-api-3.0-M2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lenskit/lenskit-api/3.0-M2/a4742a37db7d913b6ea9bdb4b42aa1a013db8866/lenskit-api-3.0-M2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
