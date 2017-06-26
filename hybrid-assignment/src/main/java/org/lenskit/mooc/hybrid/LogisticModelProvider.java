@@ -1,5 +1,6 @@
 package org.lenskit.mooc.hybrid;
 
+import org.lenskit.LenskitRecommender;
 import org.lenskit.api.ItemScorer;
 import org.lenskit.api.Result;
 import org.lenskit.bias.BiasModel;
@@ -10,6 +11,7 @@ import org.lenskit.inject.Transient;
 import org.lenskit.util.ProgressLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import sun.rmi.runtime.Log;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
@@ -56,6 +58,39 @@ public class LogisticModelProvider implements Provider<LogisticModel> {
         LogisticModel current = LogisticModel.create(intercept, params);
 
         // TODO Implement model training
+
+        for(int iter=0; iter<ITERATION_COUNT; iter++){
+            List<Rating> data = dataSplit.getTuneRatings();
+            Collections.shuffle(data, random);
+
+            for(Rating rating: data){
+                double bias = baseline.getIntercept() + baseline.getItemBias(rating.getItemId()) +
+                                                        baseline.getUserBias(rating.getUserId());
+                double y_ui = rating.getValue();
+
+                double b1x1 = params[0]*bias;
+                double b2x2 = params[1] * Math.log10(ratingSummary.getItemRatingCount(rating.getItemId()));
+                double sigValues = intercept + b1x1 + b2x2;
+                int ind = 2;
+                for(ItemScorer rec: recommenders.getItemScorers()){
+                    sigValues += params[ind] * (rec.score(rating.getUserId(), rating.getItemId()).getScore() - bias);
+                    ind++;
+                }
+
+                double sigm = LogisticModel.sigmoid(-y_ui * sigValues);
+
+                intercept = LEARNING_RATE * y_ui * sigm;
+
+                params[0] = LEARNING_RATE * y_ui * bias * sigm;
+                params[1] = LEARNING_RATE * y_ui * Math.log10(ratingSummary.getItemRatingCount(rating.getItemId())) * sigm;
+                ind = 2;
+                for(ItemScorer rec: recommenders.getItemScorers()){
+                    params[ind] = LEARNING_RATE * y_ui * sigm * (rec.score(rating.getUserId(), rating.getItemId()).getScore() - bias);
+                    ind++;
+                }
+            }
+            current = LogisticModel.create(intercept, params);
+        }
 
         return current;
     }

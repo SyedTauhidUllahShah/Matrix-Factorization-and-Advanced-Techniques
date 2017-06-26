@@ -51,6 +51,26 @@ public class LinearBlendItemScorer extends AbstractItemScorer {
 
         // TODO Compute hybrid scores
 
+        double bias = biasModel.getIntercept() + biasModel.getUserBias(user);
+        for (Long item: items){
+            double bias_ui = bias + biasModel.getItemBias(item);
+
+            double leftScorer_score = bias_ui;
+            double rightScorer_score = bias_ui;
+
+            if(leftScorer.score(user, item) != null){
+                leftScorer_score = leftScorer.score(user, item).getScore();
+            }
+            if(rightScorer.score(user, item) != null){
+                rightScorer_score = rightScorer.score(user, item).getScore();
+            }
+
+            double res = bias_ui + (1-blendWeight)*(leftScorer_score - bias_ui) +
+                                    blendWeight*(rightScorer_score - bias_ui);
+
+            results.add(Results.create(item, res));
+        }
+
         return Results.newResultMap(results);
     }
 }

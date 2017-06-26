@@ -1,6 +1,7 @@
 package org.lenskit.mooc.hybrid;
 
 import it.unimi.dsi.fastutil.longs.LongSet;
+import org.apache.commons.math3.linear.RealVector;
 import org.lenskit.api.ItemScorer;
 import org.lenskit.api.Result;
 import org.lenskit.api.ResultMap;
@@ -10,6 +11,7 @@ import org.lenskit.bias.UserBiasModel;
 import org.lenskit.data.ratings.RatingSummary;
 import org.lenskit.results.Results;
 import org.lenskit.util.collections.LongUtils;
+import sun.rmi.runtime.Log;
 
 import javax.annotation.Nonnull;
 import javax.inject.Inject;
@@ -39,6 +41,29 @@ public class LogisticItemScorer extends AbstractItemScorer {
     @Override
     public ResultMap scoreWithDetails(long user, @Nonnull Collection<Long> items) {
         // TODO Implement item scorer
-        throw new UnsupportedOperationException("item scorer not implemented");
+
+        List<Result> results = new ArrayList<>();
+
+        RealVector coef = logisticModel.getCoefficients();
+
+        for (Long item: items){
+            double sigValues = logisticModel.getIntercept();
+            double bias = biasModel.getIntercept() + biasModel.getItemBias(item) + biasModel.getUserBias(user);
+            sigValues += bias * coef.getEntry(0);
+            sigValues += Math.log10(ratingSummary.getItemRatingCount(item)) * coef.getEntry(1);
+
+            int ind = 2;
+            for (ItemScorer rec: recommenders.getItemScorers()){
+                sigValues += coef.getEntry(ind) * rec.score(user, item).getScore();
+                ind++;
+            }
+
+            double res = LogisticModel.sigmoid(sigValues);
+            results.add(Results.create(item, res));
+        }
+
+        //throw new UnsupportedOperationException("item scorer not implemented");
+
+        return Results.newResultMap(results);
     }
 }
