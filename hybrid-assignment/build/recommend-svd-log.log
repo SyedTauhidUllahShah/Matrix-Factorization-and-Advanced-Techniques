@@ -1,106 +1,99 @@
-00:47:01.163 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M2 on Java 1.8.0_111 from Oracle Corporation
-00:47:01.202 DEBUG [main] org.lenskit.LenskitInfo: have 5655 active revisions
-00:47:01.216 DEBUG [main] org.lenskit.cli.Main: Built from Git revision 0c68ad209f38816e66497a656f777a3c1484778d
-00:47:01.216 DEBUG [main] org.lenskit.cli.Main: Using VM 'Java HotSpot(TM) 64-Bit Server VM' version 25.111-b14 from Oracle Corporation
-00:47:01.216 INFO [main] org.lenskit.cli.Main: Have 4 processors and heap limit of 1820 MiB
-00:47:01.234 INFO [main] org.lenskit.cli.util.RecommenderLoader: creating fresh recommender
-00:47:01.564 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd-log.groovy
-00:47:02.251 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source ratings with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
-00:47:02.251 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/ratings.csv
-00:47:02.261 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source ratings to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/ratings.csv
-00:47:02.266 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: using delimiter ,
-00:47:02.267 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading header
-00:47:02.267 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading entities of type EntityType[rating]
-00:47:02.308 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.ratings.RatingBuilder: using entity builder {}
-00:47:02.308 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source movies with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
-00:47:02.308 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
-00:47:02.308 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source movies to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
-00:47:02.308 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: using delimiter ,
-00:47:02.308 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading header
-00:47:02.310 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading entities of type EntityType[item]
-00:47:02.310 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
-00:47:02.310 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source tags with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
-00:47:02.310 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
-00:47:02.310 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source tags to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
-00:47:02.310 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: using delimiter ,
-00:47:02.311 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading header
-00:47:02.311 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading entities of type EntityType[item-tag]
-00:47:02.311 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
-00:47:02.316 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 3 configurations
-00:47:02.448 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 23 nodes
-00:47:02.455 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 10 shared nodes
-00:47:07.921 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
-00:47:08.019 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
-00:47:08.094 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 2 indexes
-00:47:08.134 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 264505 entities with type EntityType[rating] and 2 indexes
-00:47:08.153 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 2 indexes
-00:47:08.154 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 2 indexes
-00:47:08.298 INFO [main] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 264505 ratings
-00:47:08.538 INFO [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: separating input data into train and tune sets
-00:47:08.539 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[item]
-00:47:08.551 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[item-tag]
-00:47:09.018 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[user]
-00:47:09.024 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: splitting ratings
-00:47:10.233 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 0 indexes
-00:47:10.250 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 237990 entities with type EntityType[rating] and 2 indexes
-00:47:10.259 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 0 indexes
-00:47:10.259 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 0 indexes
-00:47:10.260 INFO [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: selected 26515 train ratings, building 53030 negative samples
-00:47:10.275 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 1 configurations
-00:47:10.330 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 25 nodes
-00:47:10.330 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 13 shared nodes
-00:47:10.355 INFO [main] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237990 ratings
-00:47:10.488 DEBUG [main] org.lenskit.data.ratings.PackedRatingMatrixProvider: Packing preference snapshot
-00:47:10.597 DEBUG [main] org.lenskit.data.ratings.PackedRatingMatrixProvider: Packed 237990 ratings
-00:47:10.667 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Learning rate is 0.0015
-00:47:10.668 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Regularization term is 0.015
-00:47:10.670 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Building SVD with 20 features for 237990 ratings
-00:47:11.018 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 0
-00:47:11.507 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 0 in 00:00:00.487
-00:47:11.508 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 1
-00:47:11.891 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 1 in 00:00:00.382
-00:47:11.891 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 2
-00:47:12.293 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 2 in 00:00:00.401
-00:47:12.293 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 3
-00:47:12.738 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 3 in 00:00:00.444
-00:47:12.739 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 4
-00:47:13.105 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 4 in 00:00:00.366
-00:47:13.106 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 5
-00:47:13.501 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 5 in 00:00:00.395
-00:47:13.501 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 6
-00:47:13.865 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 6 in 00:00:00.363
-00:47:13.865 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 7
-00:47:14.283 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 7 in 00:00:00.417
-00:47:14.283 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 8
-00:47:14.663 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 8 in 00:00:00.379
-00:47:14.663 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 9
-00:47:15.027 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 9 in 00:00:00.363
-00:47:15.028 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 10
-00:47:15.388 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 10 in 00:00:00.360
-00:47:15.388 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 11
-00:47:15.735 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 11 in 00:00:00.346
-00:47:15.735 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 12
-00:47:16.095 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 12 in 00:00:00.360
-00:47:16.096 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 13
-00:47:16.449 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 13 in 00:00:00.352
-00:47:16.449 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 14
-00:47:16.821 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 14 in 00:00:00.372
-00:47:16.822 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 15
-00:47:17.192 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 15 in 00:00:00.370
-00:47:17.193 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 16
-00:47:17.554 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 16 in 00:00:00.361
-00:47:17.555 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 17
-00:47:17.909 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 17 in 00:00:00.353
-00:47:17.909 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 18
-00:47:18.258 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 18 in 00:00:00.348
-00:47:18.258 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 19
-00:47:18.630 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 19 in 00:00:00.371
-00:47:18.630 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: final graph has 17 nodes
-00:47:18.631 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: rewriting graph
-00:48:18.456 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: final graph has 18 nodes
-00:48:18.458 INFO [main] org.lenskit.cli.util.RecommenderLoader: built recommender in 1.269 min
-00:48:18.466 INFO [main] org.lenskit.cli.commands.Recommend: recommending for 1 users
-00:48:18.471 DEBUG [main] org.lenskit.basic.TopNItemRecommender: computing effective candidates for user 320 from 2500 candidates and 62 excluded items
-00:48:18.473 DEBUG [main] org.lenskit.basic.TopNItemRecommender: Computing 10 recommendations for user 320 from 2438 candidates
-00:48:18.560 INFO [main] org.lenskit.cli.commands.Recommend: recommended for 1 users in 93.55 ms
-00:48:18.561 INFO [main] org.lenskit.cli.Main: If you use LensKit in published research, please see http://lenskit.org/research/
+14:53:19.817 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M2 on Java 1.8.0_111 from Oracle Corporation
+14:53:19.848 DEBUG [main] org.lenskit.LenskitInfo: have 5655 active revisions
+14:53:19.854 DEBUG [main] org.lenskit.cli.Main: Built from Git revision 0c68ad209f38816e66497a656f777a3c1484778d
+14:53:19.854 DEBUG [main] org.lenskit.cli.Main: Using VM 'Java HotSpot(TM) 64-Bit Server VM' version 25.111-b14 from Oracle Corporation
+14:53:19.854 INFO [main] org.lenskit.cli.Main: Have 4 processors and heap limit of 1820 MiB
+14:53:19.877 INFO [main] org.lenskit.cli.util.RecommenderLoader: creating fresh recommender
+14:53:20.189 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd-log.groovy
+14:53:20.792 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source ratings with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
+14:53:20.792 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/ratings.csv
+14:53:20.801 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source ratings to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/ratings.csv
+14:53:20.806 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: using delimiter ,
+14:53:20.806 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading header
+14:53:20.806 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: ratings: reading entities of type EntityType[rating]
+14:53:20.850 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.ratings.RatingBuilder: using entity builder {}
+14:53:20.850 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source movies with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
+14:53:20.850 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:53:20.850 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source movies to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: using delimiter ,
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading header
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: movies: reading entities of type EntityType[item]
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: loading source tags with base URI file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movielens.yml
+14:53:20.851 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: resolved file URI: file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:53:20.851 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source tags to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:53:20.852 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: using delimiter ,
+14:53:20.852 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading header
+14:53:20.852 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: tags: reading entities of type EntityType[item-tag]
+14:53:20.852 DEBUG [main] org.lenskit.data.dao.file.TextEntitySource: class org.lenskit.data.entities.BasicEntityBuilder: using entity builder {}
+14:53:20.861 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 3 configurations
+14:53:21.001 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 23 nodes
+14:53:21.005 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 10 shared nodes
+14:53:24.533 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+14:53:24.633 INFO [main] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+14:53:24.722 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 2 indexes
+14:53:24.770 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 264505 entities with type EntityType[rating] and 2 indexes
+14:53:24.787 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 2 indexes
+14:53:24.788 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 2 indexes
+14:53:24.901 INFO [main] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 264505 ratings
+14:53:25.167 INFO [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: separating input data into train and tune sets
+14:53:25.167 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[item]
+14:53:25.184 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[item-tag]
+14:53:25.653 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: copying entities of type EntityType[user]
+14:53:25.659 DEBUG [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: splitting ratings
+14:53:26.791 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 2500 entities with type EntityType[item] and 0 indexes
+14:53:26.804 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 237998 entities with type EntityType[rating] and 2 indexes
+14:53:26.809 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 94875 entities with type EntityType[item-tag] and 0 indexes
+14:53:26.809 DEBUG [main] org.lenskit.data.entities.EntityCollectionBuilder: built collection of 862 entities with type EntityType[user] and 0 indexes
+14:53:26.810 INFO [main] org.lenskit.mooc.hybrid.LogisticTrainingSplit: selected 26507 train ratings, building 53014 negative samples
+14:53:26.826 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: building graph from 1 configurations
+14:53:26.911 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: replacing nodes in graph with 25 nodes
+14:53:26.912 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: found 13 shared nodes
+14:53:26.932 INFO [main] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237998 ratings
+14:53:27.109 DEBUG [main] org.lenskit.data.ratings.PackedRatingMatrixProvider: Packing preference snapshot
+14:53:27.177 DEBUG [main] org.lenskit.data.ratings.PackedRatingMatrixProvider: Packed 237998 ratings
+14:53:27.233 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Learning rate is 0.0015
+14:53:27.233 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Regularization term is 0.015
+14:53:27.235 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Building SVD with 20 features for 237998 ratings
+14:53:27.535 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 0
+14:53:28.008 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 0 in 00:00:00.471
+14:53:28.010 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 1
+14:53:28.389 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 1 in 00:00:00.379
+14:53:28.390 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 2
+14:53:28.765 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 2 in 00:00:00.375
+14:53:28.766 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 3
+14:53:29.135 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 3 in 00:00:00.369
+14:53:29.135 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 4
+14:53:29.512 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 4 in 00:00:00.376
+14:53:29.512 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 5
+14:53:29.887 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 5 in 00:00:00.374
+14:53:29.887 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 6
+14:53:30.253 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 6 in 00:00:00.365
+14:53:30.254 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 7
+14:53:30.635 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 7 in 00:00:00.380
+14:53:30.635 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 8
+14:53:31.015 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 8 in 00:00:00.379
+14:53:31.015 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 9
+14:53:31.417 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 9 in 00:00:00.401
+14:53:31.417 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 10
+14:53:31.782 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 10 in 00:00:00.365
+14:53:31.783 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 11
+14:53:32.146 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 11 in 00:00:00.362
+14:53:32.146 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 12
+14:53:32.518 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 12 in 00:00:00.371
+14:53:32.519 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 13
+14:53:32.886 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 13 in 00:00:00.367
+14:53:32.887 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 14
+14:53:33.250 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 14 in 00:00:00.362
+14:53:33.250 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 15
+14:53:33.626 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 15 in 00:00:00.375
+14:53:33.626 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 16
+14:53:33.994 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 16 in 00:00:00.367
+14:53:33.994 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 17
+14:53:34.369 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 17 in 00:00:00.374
+14:53:34.370 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 18
+14:53:34.733 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 18 in 00:00:00.362
+14:53:34.733 DEBUG [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Training feature 19
+14:53:35.112 INFO [main] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 19 in 00:00:00.378
+14:53:35.113 DEBUG [main] org.lenskit.inject.RecommenderInstantiator: final graph has 17 nodes
+14:53:35.114 DEBUG [main] org.lenskit.LenskitRecommenderEngineBuilder: rewriting graph

@@ -1,0 +1,182 @@
+12:17:26.028 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M2 on Java 1.8.0_111 from Oracle Corporation
+12:17:26.066 INFO [main] org.lenskit.cli.Main: Have 4 processors and heap limit of 1820 MiB
+12:17:26.066 INFO [main] org.lenskit.cli.commands.TrainTest: loading train-test configuration from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/sweepHybrid-spec.json
+12:17:26.494 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part01.train.csv.gz
+12:17:26.580 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+12:17:26.580 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+12:17:26.582 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part01.test.csv.gz
+12:17:26.590 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part02.train.csv.gz
+12:17:26.595 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+12:17:26.596 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+12:17:26.597 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part02.test.csv.gz
+12:17:26.603 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part03.train.csv.gz
+12:17:26.608 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+12:17:26.609 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+12:17:26.611 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part03.test.csv.gz
+12:17:26.626 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part04.train.csv.gz
+12:17:26.637 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+12:17:26.638 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+12:17:26.639 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part04.test.csv.gz
+12:17:26.645 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part05.train.csv.gz
+12:17:26.650 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+12:17:26.650 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+12:17:26.652 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part05.test.csv.gz
+12:17:26.908 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii.groovy
+12:17:27.397 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii.groovy
+12:17:27.402 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd.groovy
+12:17:27.483 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd.groovy
+12:17:27.490 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/hybridsweep.groovy
+12:17:27.741 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 22 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/hybridsweep.groovy
+12:17:27.748 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene.groovy
+12:17:27.871 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene.groovy
+12:17:28.130 INFO [main] org.lenskit.eval.traintest.TrainTestExperiment: running with 4 threads
+12:17:33.834 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+12:17:33.859 INFO [ForkJoinPool-1-worker-2] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+12:17:34.062 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+12:17:34.081 INFO [ForkJoinPool-1-worker-2] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+12:17:34.206 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(lucene)[Algorithm=lucene] on DataSet(crossfold)[Partition=5]
+12:17:34.206 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(lucene-svd-blend)[Algorithm=lucene-svd-blend, BlendWeight=1.0] on DataSet(crossfold)[Partition=5]
+12:17:34.206 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(ii-svd-blend)[Algorithm=ii-svd-blend, BlendWeight=1.0] on DataSet(crossfold)[Partition=5]
+12:17:34.208 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(ii)[Algorithm=ii] on DataSet(crossfold)[Partition=1]
+12:17:34.640 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ComponentCache: wrote object [NeighborhoodScorer: WeightedAverage] to cache as 2eda959ddbdc29e42d864544f25e4fb9dd18dc77 (88 bytes)
+12:17:34.776 INFO [ForkJoinPool-1-worker-0] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 263645 ratings
+12:17:34.776 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 263640 ratings
+12:17:34.798 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.data.ratings.RatingSummary@442a822 to cache as 459e34e2362c4f8ef0af0fd9ca71d6052ec5a8ff (27854 bytes)
+12:17:34.800 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.data.ratings.RatingSummary@17b1cb92 to cache as f2bea705e2d4dd46879c60c11c6f29b2809bb2a0 (27862 bytes)
+12:17:34.827 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.bias.ItemBiasModel@c9c82c9 to cache as 4e56acd8e5f718cff0f09cd91fd52f187e00a5f1 (23581 bytes)
+12:17:34.837 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.bias.ItemBiasModel@70eedab5 to cache as c48b2ebc2c50f115c4fbc2c37ddf4ee3d338e178 (23540 bytes)
+12:17:34.830 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Built lucene in 620.6 ms
+12:17:34.839 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Measuring lucene on crossfold
+12:17:34.844 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemBuildContextProvider: constructing build context
+12:17:34.997 INFO [ForkJoinPool-1-worker-2] org.lenskit.mooc.cbf.LuceneModelBuilder: Building Lucene movie model
+12:17:35.674 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.bias.UserItemBiasModel@36426a06 to cache as 23a0c14e18fa4351ba909ab3b101e6e81461416e (32764 bytes)
+12:17:35.680 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ComponentCache: wrote object Stop(iterations=125) to cache as 284b17c5ef596b9c156f2de4aa059816a0611edf (101 bytes)
+12:17:36.044 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Building SVD with 40 features for 263645 ratings
+12:17:36.481 INFO [ForkJoinPool-1-worker-2] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+12:17:36.487 INFO [ForkJoinPool-1-worker-2] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+12:17:36.492 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(lucene)[Algorithm=lucene] on DataSet(crossfold)[Partition=5] (172 users)
+12:17:36.925 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.knn.item.model.ItemItemBuildContext@34518aaa to cache as 8233091b16dfd0eb03f319279f664c60fd341c2b (1137775 bytes)
+12:17:36.931 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object cosine[d=0.0] to cache as 7164c0a7dea6da29c10b7085d3cda57c8dfbbe0b (104 bytes)
+12:17:36.935 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object {item similarity: cosine[d=0.0]} to cache as 30bbecdd1e30b97193669e183d21a266f619a3df (161 bytes)
+12:17:36.938 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object org.grouplens.lenskit.transform.threshold.AbsoluteThreshold@e042d3e to cache as b798003ac9cf6176d9a820a35fc0a1af985f879d (98 bytes)
+12:17:37.102 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: building item-item model for 2500 items
+12:17:38.079 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 100 of 2500 (4.00%, 0.010s/row, ETA 23.378s)
+12:17:38.527 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 0 in 00:00:01.731
+12:17:39.793 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 200 of 2500 (8.00%, 0.013s/row, ETA 30.916s)
+12:17:40.427 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 300 of 2500 (12.00%, 0.011s/row, ETA 24.362s)
+12:17:40.904 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 1 in 00:00:02.371
+12:17:41.172 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 400 of 2500 (16.00%, 0.010s/row, ETA 21.351s)
+12:17:41.649 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 500 of 2500 (20.00%, 0.009s/row, ETA 18.175s)
+12:17:41.950 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 2 in 00:00:01.045
+12:17:42.192 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 600 of 2500 (24.00%, 0.008s/row, ETA 16.108s)
+12:17:42.702 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 700 of 2500 (28.00%, 0.008s/row, ETA 14.393s)
+12:17:42.929 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 3 in 00:00:00.977
+12:17:43.128 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 800 of 2500 (32.00%, 0.008s/row, ETA 12.799s)
+12:17:43.511 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 900 of 2500 (36.00%, 0.007s/row, ETA 11.388s)
+12:17:43.829 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1000 of 2500 (40.00%, 0.007s/row, ETA 10.086s)
+12:17:43.836 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 4 in 00:00:00.907
+12:17:44.120 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1100 of 2500 (44.00%, 0.006s/row, ETA 8.928s)
+12:17:44.384 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1200 of 2500 (48.00%, 0.006s/row, ETA 7.886s)
+12:17:44.691 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1300 of 2500 (52.00%, 0.006s/row, ETA 7.002s)
+12:17:44.716 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 5 in 00:00:00.879
+12:17:44.981 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1400 of 2500 (56.00%, 0.006s/row, ETA 6.188s)
+12:17:45.223 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1500 of 2500 (60.00%, 0.005s/row, ETA 5.412s)
+12:17:45.430 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1600 of 2500 (64.00%, 0.005s/row, ETA 4.683s)
+12:17:45.624 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1700 of 2500 (68.00%, 0.005s/row, ETA 4.009s)
+12:17:45.649 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 6 in 00:00:00.932
+12:17:45.822 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1800 of 2500 (72.00%, 0.005s/row, ETA 3.390s)
+12:17:46.030 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1900 of 2500 (76.00%, 0.005s/row, ETA 2.818s)
+12:17:46.204 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2000 of 2500 (80.00%, 0.005s/row, ETA 2.275s)
+12:17:46.320 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2100 of 2500 (84.00%, 0.004s/row, ETA 1.755s)
+12:17:46.404 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2200 of 2500 (88.00%, 0.004s/row, ETA 1.268s)
+12:17:46.456 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2300 of 2500 (92.00%, 0.004s/row, ETA 0.813s)
+12:17:46.485 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2400 of 2500 (96.00%, 0.004s/row, ETA 0.391s)
+12:17:46.496 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2500 of 2500 (100.00%, 0.004s/row, ETA 0.000s)
+12:17:46.497 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: built model of 6198368 similarities for 2500 items in 9.392s
+12:17:46.762 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 7 in 00:00:01.112
+12:17:47.975 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 8 in 00:00:01.211
+12:17:48.896 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 9 in 00:00:00.920
+12:17:50.142 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 10 in 00:00:01.245
+12:17:51.079 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 11 in 00:00:00.936
+12:17:52.017 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 12 in 00:00:00.938
+12:17:53.015 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 13 in 00:00:00.997
+12:17:53.893 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 14 in 00:00:00.876
+12:17:54.793 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 15 in 00:00:00.899
+12:17:55.682 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 16 in 00:00:00.889
+12:17:56.479 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 17 in 00:00:00.795
+12:17:56.600 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ComponentCache: wrote object matrix of 6198368 similarities for 2500 items to cache as b85170b8593a167669d9db91a53a7a388e7ca3b6 (48086606 bytes)
+12:17:56.712 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Built ii in 22.50 s
+12:17:56.712 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Measuring ii on crossfold
+12:17:56.731 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+12:17:56.732 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+12:17:56.736 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(ii)[Algorithm=ii] on DataSet(crossfold)[Partition=1] (173 users)
+12:17:57.365 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: testing users: finished 100 of 172 (58.14%, 0.209s/row, ETA 15.025s)
+12:17:57.394 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 18 in 00:00:00.914
+12:17:58.354 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 19 in 00:00:00.960
+12:17:59.164 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 20 in 00:00:00.808
+12:18:00.027 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 21 in 00:00:00.862
+12:18:00.786 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 22 in 00:00:00.758
+12:18:01.566 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 23 in 00:00:00.779
+12:18:02.328 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 24 in 00:00:00.762
+12:18:03.126 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 25 in 00:00:00.797
+12:18:03.861 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 26 in 00:00:00.735
+12:18:03.928 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Tested lucene in 27.43 s
+12:18:03.928 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.predict.RMSEPredictMetric: RMSE: 0.8382889405638403
+12:18:03.930 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.TrainTestExperiment: job 1 of 125 (org.lenskit.eval.traintest.ExperimentJob@292676b6) finished
+12:18:03.930 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(lucene-svd-blend)[Algorithm=lucene-svd-blend, BlendWeight=0.9] on DataSet(crossfold)[Partition=5]
+12:18:04.762 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 27 in 00:00:00.899
+12:18:05.295 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 28 in 00:00:00.533
+12:18:05.823 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 29 in 00:00:00.526
+12:18:06.397 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 30 in 00:00:00.574
+12:18:06.933 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 31 in 00:00:00.536
+12:18:07.498 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 32 in 00:00:00.564
+12:18:08.029 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 33 in 00:00:00.530
+12:18:08.563 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 34 in 00:00:00.533
+12:18:09.097 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 35 in 00:00:00.534
+12:18:09.629 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 36 in 00:00:00.531
+12:18:10.166 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 37 in 00:00:00.537
+12:18:10.698 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 38 in 00:00:00.531
+12:18:11.232 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 39 in 00:00:00.533
+12:18:11.337 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ComponentCache: wrote object FunkSVDModel(nu=862, ni=2500, nf=40) to cache as 6f68838d675c8155b67924abd0306482e6d5c908 (1095486 bytes)
+12:18:11.342 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemBuildContextProvider: constructing build context
+12:18:11.347 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Built lucene-svd-blend in 7.416 s
+12:18:11.347 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Measuring lucene-svd-blend on crossfold
+12:18:11.359 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ExperimentJob: Built lucene-svd-blend in 37.15 s
+12:18:11.359 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ExperimentJob: Measuring lucene-svd-blend on crossfold
+12:18:11.361 INFO [ForkJoinPool-1-worker-2] org.lenskit.mooc.cbf.LuceneModelBuilder: Building Lucene movie model
+12:18:11.366 INFO [ForkJoinPool-1-worker-3] org.lenskit.mooc.cbf.LuceneModelBuilder: Building Lucene movie model
+12:18:12.127 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(lucene-svd-blend)[Algorithm=lucene-svd-blend, BlendWeight=1.0] on DataSet(crossfold)[Partition=5] (172 users)
+12:18:12.150 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(lucene-svd-blend)[Algorithm=lucene-svd-blend, BlendWeight=0.9] on DataSet(crossfold)[Partition=5] (172 users)
+12:18:12.542 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ComponentCache: wrote object org.lenskit.knn.item.model.ItemItemBuildContext@261a0269 to cache as 350947c4b9771eca06d006cc5fb1c86b366c2a1f (1139371 bytes)
+12:18:12.664 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: building item-item model for 2500 items
+12:18:13.489 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 100 of 2500 (4.00%, 0.008s/row, ETA 19.776s)
+12:18:14.549 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 200 of 2500 (8.00%, 0.009s/row, ETA 21.660s)
+12:18:15.272 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 300 of 2500 (12.00%, 0.009s/row, ETA 19.117s)
+12:18:15.962 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 400 of 2500 (16.00%, 0.008s/row, ETA 17.307s)
+12:18:16.482 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 500 of 2500 (20.00%, 0.008s/row, ETA 15.267s)
+12:18:17.106 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 600 of 2500 (24.00%, 0.007s/row, ETA 14.063s)
+12:18:17.648 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 700 of 2500 (28.00%, 0.007s/row, ETA 12.814s)
+12:18:18.061 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 800 of 2500 (32.00%, 0.007s/row, ETA 11.466s)
+12:18:18.606 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 900 of 2500 (36.00%, 0.007s/row, ETA 10.560s)
+12:18:19.142 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1000 of 2500 (40.00%, 0.006s/row, ETA 9.715s)
+12:18:19.505 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1100 of 2500 (44.00%, 0.006s/row, ETA 8.705s)
+12:18:19.810 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1200 of 2500 (48.00%, 0.006s/row, ETA 7.740s)
+12:18:20.132 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1300 of 2500 (52.00%, 0.006s/row, ETA 6.892s)
+12:18:20.425 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1400 of 2500 (56.00%, 0.006s/row, ETA 6.097s)
+12:18:20.692 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1500 of 2500 (60.00%, 0.005s/row, ETA 5.351s)
+12:18:20.935 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1600 of 2500 (64.00%, 0.005s/row, ETA 4.652s)
+12:18:21.211 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1700 of 2500 (68.00%, 0.005s/row, ETA 4.021s)
+12:18:21.417 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1800 of 2500 (72.00%, 0.005s/row, ETA 3.403s)
+12:18:21.631 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1900 of 2500 (76.00%, 0.005s/row, ETA 2.831s)
+12:18:21.813 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2000 of 2500 (80.00%, 0.005s/row, ETA 2.287s)
+12:18:21.934 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2100 of 2500 (84.00%, 0.004s/row, ETA 1.765s)
+12:18:22.034 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2200 of 2500 (88.00%, 0.004s/row, ETA 1.278s)
+12:18:22.118 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2300 of 2500 (92.00%, 0.004s/row, ETA 0.822s)
+12:18:22.160 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2400 of 2500 (96.00%, 0.004s/row, ETA 0.396s)
+12:18:22.173 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2500 of 2500 (100.00%, 0.004s/row, ETA 0.000s)
+12:18:22.173 INFO [ForkJoinPool-1-worker-0] org.lenskit.knn.item.model.ItemItemModelProvider: built model of 6198736 similarities for 2500 items in 9.507s
+12:18:31.073 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: testing users: finished 100 of 173 (57.80%, 0.343s/row, ETA 25.064s)
+12:18:31.963 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ComponentCache: wrote object matrix of 6198736 similarities for 2500 items to cache as b593c2ba5a98abee5fe2555909373aa7614aff27 (48087409 bytes)
+12:18:31.964 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ExperimentJob: Built ii-svd-blend in 57.75 s
+12:18:31.965 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ExperimentJob: Measuring ii-svd-blend on crossfold
+12:18:31.974 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(ii-svd-blend)[Algorithm=ii-svd-blend, BlendWeight=1.0] on DataSet(crossfold)[Partition=5] (172 users)

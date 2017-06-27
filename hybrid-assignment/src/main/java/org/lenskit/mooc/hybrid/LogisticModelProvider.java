@@ -1,5 +1,6 @@
 package org.lenskit.mooc.hybrid;
 
+import com.google.common.base.StandardSystemProperty;
 import org.lenskit.LenskitRecommender;
 import org.lenskit.api.ItemScorer;
 import org.lenskit.api.Result;
@@ -71,24 +72,28 @@ public class LogisticModelProvider implements Provider<LogisticModel> {
                 double b1x1 = params[0]*bias;
                 double b2x2 = params[1] * Math.log10(ratingSummary.getItemRatingCount(rating.getItemId()));
                 double sigValues = intercept + b1x1 + b2x2;
-                int ind = 2;
-                for(ItemScorer rec: recommenders.getItemScorers()){
-                    sigValues += params[ind] * (rec.score(rating.getUserId(), rating.getItemId()).getScore() - bias);
-                    ind++;
+                for (int i=0; i<recommenders.getItemScorers().size(); i++){
+                    if(recommenders.getItemScorers().get(i).score(rating.getUserId(), rating.getItemId()) != null) {
+                        sigValues += params[i + 2] * (recommenders.getItemScorers().get(i).score(rating.getUserId(), rating.getItemId()).getScore() - bias);
+                    }
                 }
 
                 double sigm = LogisticModel.sigmoid(-y_ui * sigValues);
 
                 intercept = LEARNING_RATE * y_ui * sigm;
-
                 params[0] = LEARNING_RATE * y_ui * bias * sigm;
                 params[1] = LEARNING_RATE * y_ui * Math.log10(ratingSummary.getItemRatingCount(rating.getItemId())) * sigm;
-                ind = 2;
-                for(ItemScorer rec: recommenders.getItemScorers()){
-                    params[ind] = LEARNING_RATE * y_ui * sigm * (rec.score(rating.getUserId(), rating.getItemId()).getScore() - bias);
-                    ind++;
+                for (int i=0; i<recommenders.getItemScorers().size(); i++){
+                    if(recommenders.getItemScorers().get(i).score(rating.getUserId(), rating.getItemId()) != null) {
+                        params[i + 2] = LEARNING_RATE * y_ui * sigm *
+                                (recommenders.getItemScorers().get(i).score(rating.getUserId(), rating.getItemId()).getScore() - bias);
+                    }
                 }
             }
+            for(int i=0; i<params.length; i++){
+                System.out.print(params[i] + " ");
+            }
+            System.out.println("");
             current = LogisticModel.create(intercept, params);
         }
 

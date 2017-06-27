@@ -52,17 +52,15 @@ public class LogisticItemScorer extends AbstractItemScorer {
             sigValues += bias * coef.getEntry(0);
             sigValues += Math.log10(ratingSummary.getItemRatingCount(item)) * coef.getEntry(1);
 
-            int ind = 2;
-            for (ItemScorer rec: recommenders.getItemScorers()){
-                sigValues += coef.getEntry(ind) * rec.score(user, item).getScore();
-                ind++;
+            for (int i=0; i<recommenders.getItemScorers().size(); i++){
+                if(recommenders.getItemScorers().get(i).score(user, item) != null) {
+                    sigValues += coef.getEntry(i + 2) * recommenders.getItemScorers().get(i).score(user, item).getScore();
+                }
             }
 
             double res = LogisticModel.sigmoid(sigValues);
             results.add(Results.create(item, res));
         }
-
-        //throw new UnsupportedOperationException("item scorer not implemented");
 
         return Results.newResultMap(results);
     }

@@ -1,0 +1,160 @@
+14:54:24.401 INFO [main] org.lenskit.cli.Main: Starting LensKit 3.0-M2 on Java 1.8.0_111 from Oracle Corporation
+14:54:24.454 INFO [main] org.lenskit.cli.Main: Have 4 processors and heap limit of 1820 MiB
+14:54:24.455 INFO [main] org.lenskit.cli.commands.TrainTest: loading train-test configuration from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/evaluateLogistic-spec.json
+14:54:24.789 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part01.train.csv.gz
+14:54:24.868 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:54:24.869 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:54:24.870 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part01.test.csv.gz
+14:54:24.888 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part02.train.csv.gz
+14:54:24.895 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:54:24.896 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:54:24.899 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part02.test.csv.gz
+14:54:24.905 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part03.train.csv.gz
+14:54:24.909 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:54:24.909 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:54:24.911 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part03.test.csv.gz
+14:54:24.919 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part04.train.csv.gz
+14:54:24.924 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:54:24.925 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:54:24.926 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part04.test.csv.gz
+14:54:24.932 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part05.train.csv.gz
+14:54:24.937 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/movies.csv
+14:54:24.937 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/data/tags.csv
+14:54:24.939 INFO [main] org.lenskit.data.dao.file.TextEntitySource: loading text file source <unnamed> to read from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/build/crossfold.out/part05.test.csv.gz
+14:54:25.209 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii.groovy
+14:54:25.652 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii.groovy
+14:54:25.659 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd.groovy
+14:54:25.708 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd.groovy
+14:54:25.713 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd-log.groovy
+14:54:25.790 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/svd-log.groovy
+14:54:25.794 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene.groovy
+14:54:25.952 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene.groovy
+14:54:25.964 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/popular.groovy
+14:54:26.006 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/popular.groovy
+14:54:26.019 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii-log.groovy
+14:54:26.083 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii-log.groovy
+14:54:26.087 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene-svd-log.groovy
+14:54:26.183 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene-svd-log.groovy
+14:54:26.187 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii-svd-log.groovy
+14:54:26.275 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/ii-svd-log.groovy
+14:54:26.281 INFO [main] org.lenskit.config.ConfigurationLoader: loading script from file:/Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene-log.groovy
+14:54:26.361 INFO [main] org.lenskit.eval.traintest.AlgorithmInstance: loaded 1 algorithms from /Users/sanzhar/Desktop/MachineLearning/RecommenderSystems_Coursera/MatrixFactorization_AdvancedTechniques/hybrid-assignment/cfg/lucene-log.groovy
+14:54:26.561 INFO [main] org.lenskit.eval.traintest.TrainTestExperiment: running with 4 threads
+14:54:31.798 INFO [ForkJoinPool-1-worker-0] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+14:54:31.908 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+14:54:32.042 INFO [ForkJoinPool-1-worker-0] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+14:54:33.217 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+14:54:33.362 INFO [ForkJoinPool-1-worker-3] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(ii-svd-log)[Algorithm=ii-svd-log] on DataSet(crossfold)[Partition=5]
+14:54:33.362 INFO [ForkJoinPool-1-worker-2] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(lucene-log)[Algorithm=lucene-log] on DataSet(crossfold)[Partition=5]
+14:54:33.362 INFO [ForkJoinPool-1-worker-0] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(lucene-svd-log)[Algorithm=lucene-svd-log] on DataSet(crossfold)[Partition=5]
+14:54:33.381 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Building Algorithm(ii)[Algorithm=ii] on DataSet(crossfold)[Partition=1]
+14:54:33.798 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 263640 ratings
+14:54:33.852 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemBuildContextProvider: constructing build context
+14:54:34.291 INFO [ForkJoinPool-1-worker-3] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 263645 ratings
+14:54:34.292 WARN [ForkJoinPool-1-worker-0] org.grouplens.lenskit.util.io.Descriptions: object org.lenskit.mooc.hybrid.RecommenderConfigurationList@69a1d2e5 not describable or serializable, using nondeterministic key
+14:54:34.293 WARN [ForkJoinPool-1-worker-3] org.grouplens.lenskit.util.io.Descriptions: object org.lenskit.mooc.hybrid.RecommenderConfigurationList@5e6cf7a0 not describable or serializable, using nondeterministic key
+14:54:34.293 WARN [ForkJoinPool-1-worker-2] org.grouplens.lenskit.util.io.Descriptions: object org.lenskit.mooc.hybrid.RecommenderConfigurationList@40bda218 not describable or serializable, using nondeterministic key
+14:54:34.306 INFO [ForkJoinPool-1-worker-0] org.lenskit.mooc.hybrid.LogisticTrainingSplit: separating input data into train and tune sets
+14:54:35.076 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: building item-item model for 2500 items
+14:54:35.673 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 100 of 2500 (4.00%, 0.006s/row, ETA 14.210s)
+14:54:36.064 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 200 of 2500 (8.00%, 0.005s/row, ETA 11.307s)
+14:54:36.412 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 300 of 2500 (12.00%, 0.004s/row, ETA 9.768s)
+14:54:36.524 INFO [ForkJoinPool-1-worker-0] org.lenskit.mooc.hybrid.LogisticTrainingSplit: selected 26360 train ratings, building 52720 negative samples
+14:54:36.731 INFO [ForkJoinPool-1-worker-2] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237285 ratings
+14:54:36.747 INFO [ForkJoinPool-1-worker-3] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237285 ratings
+14:54:36.757 INFO [ForkJoinPool-1-worker-0] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237285 ratings
+14:54:36.853 WARN [ForkJoinPool-1-worker-2] org.grouplens.lenskit.util.io.Descriptions: object org.lenskit.mooc.hybrid.RecommenderConfigurationList@40bda218 not describable or serializable, using nondeterministic key
+14:54:37.077 INFO [ForkJoinPool-1-worker-2] org.lenskit.mooc.cbf.LuceneModelBuilder: Building Lucene movie model
+14:54:37.256 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 400 of 2500 (16.00%, 0.005s/row, ETA 11.412s)
+14:54:37.644 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Building SVD with 20 features for 237285 ratings
+14:54:37.644 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Building SVD with 20 features for 237285 ratings
+14:54:38.036 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 500 of 2500 (20.00%, 0.006s/row, ETA 11.821s)
+14:54:38.708 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 600 of 2500 (24.00%, 0.006s/row, ETA 11.488s)
+14:54:39.543 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 700 of 2500 (28.00%, 0.006s/row, ETA 11.476s)
+14:54:40.183 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 800 of 2500 (32.00%, 0.006s/row, ETA 10.843s)
+14:54:40.776 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 900 of 2500 (36.00%, 0.006s/row, ETA 10.126s)
+14:54:41.314 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1000 of 2500 (40.00%, 0.006s/row, ETA 9.350s)
+14:54:41.427 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 0 in 00:00:03.015
+14:54:41.460 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 0 in 00:00:03.047
+14:54:41.889 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1100 of 2500 (44.00%, 0.006s/row, ETA 8.666s)
+14:54:42.243 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1200 of 2500 (48.00%, 0.006s/row, ETA 7.759s)
+14:54:42.694 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1300 of 2500 (52.00%, 0.006s/row, ETA 7.028s)
+14:54:42.864 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 1 in 00:00:01.421
+14:54:42.936 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 1 in 00:00:01.476
+14:54:43.125 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1400 of 2500 (56.00%, 0.006s/row, ETA 6.320s)
+14:54:43.484 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1500 of 2500 (60.00%, 0.006s/row, ETA 5.602s)
+14:54:43.840 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1600 of 2500 (64.00%, 0.005s/row, ETA 4.927s)
+14:54:44.091 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1700 of 2500 (68.00%, 0.005s/row, ETA 4.240s)
+14:54:44.240 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 2 in 00:00:01.375
+14:54:44.334 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 2 in 00:00:01.397
+14:54:44.359 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1800 of 2500 (72.00%, 0.005s/row, ETA 3.608s)
+14:54:44.643 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1900 of 2500 (76.00%, 0.005s/row, ETA 3.020s)
+14:54:44.830 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2000 of 2500 (80.00%, 0.005s/row, ETA 2.437s)
+14:54:45.004 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2100 of 2500 (84.00%, 0.005s/row, ETA 1.890s)
+14:54:45.201 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2200 of 2500 (88.00%, 0.005s/row, ETA 1.380s)
+14:54:45.281 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2300 of 2500 (92.00%, 0.004s/row, ETA 0.887s)
+14:54:45.337 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2400 of 2500 (96.00%, 0.004s/row, ETA 0.427s)
+14:54:45.351 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 2500 of 2500 (100.00%, 0.004s/row, ETA 0.000s)
+14:54:45.352 INFO [ForkJoinPool-1-worker-1] org.lenskit.knn.item.model.ItemItemModelProvider: built model of 6198324 similarities for 2500 items in 10.270s
+14:54:45.663 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 3 in 00:00:01.422
+14:54:45.938 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 3 in 00:00:01.602
+14:54:47.000 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 4 in 00:00:01.336
+14:54:47.293 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 4 in 00:00:01.354
+14:54:48.304 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 5 in 00:00:01.303
+14:54:48.606 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 5 in 00:00:01.313
+14:54:50.592 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 6 in 00:00:02.288
+14:54:50.826 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 6 in 00:00:02.219
+14:54:51.720 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 7 in 00:00:01.120
+14:54:52.111 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 7 in 00:00:01.284
+14:54:52.967 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 8 in 00:00:01.245
+14:54:53.235 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 8 in 00:00:01.123
+14:54:53.544 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Built ii in 20.16 s
+14:54:53.546 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Measuring ii on crossfold
+14:54:53.577 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[user] from EntityType[rating] (column TypedName[user: long])
+14:54:53.579 INFO [ForkJoinPool-1-worker-1] org.lenskit.data.dao.file.StaticDataSource: deriving entity type EntityType[item] from EntityType[rating] (column TypedName[item: long])
+14:54:53.583 INFO [ForkJoinPool-1-worker-1] org.lenskit.eval.traintest.ExperimentJob: Testing Algorithm(ii)[Algorithm=ii] on DataSet(crossfold)[Partition=1] (173 users)
+14:54:54.132 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 9 in 00:00:01.164
+14:54:54.413 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 9 in 00:00:01.176
+14:54:55.182 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 10 in 00:00:01.048
+14:54:55.462 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 10 in 00:00:01.049
+14:54:56.221 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 11 in 00:00:01.038
+14:54:56.472 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 11 in 00:00:01.008
+14:54:57.227 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 12 in 00:00:01.004
+14:54:57.502 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 12 in 00:00:01.030
+14:54:58.167 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 13 in 00:00:00.930
+14:54:58.495 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 13 in 00:00:00.992
+14:54:59.212 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 14 in 00:00:01.044
+14:54:59.507 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 14 in 00:00:01.011
+14:55:00.221 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 15 in 00:00:01.008
+14:55:00.466 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 15 in 00:00:00.949
+14:55:01.213 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 16 in 00:00:00.985
+14:55:01.382 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 16 in 00:00:00.916
+14:55:02.181 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 17 in 00:00:00.966
+14:55:02.330 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 17 in 00:00:00.946
+14:55:03.149 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 18 in 00:00:00.967
+14:55:03.340 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 18 in 00:00:01.009
+14:55:04.126 INFO [ForkJoinPool-1-worker-3] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 19 in 00:00:00.976
+14:55:04.256 INFO [ForkJoinPool-1-worker-3] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237285 ratings
+14:55:04.274 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemBuildContextProvider: constructing build context
+14:55:04.394 INFO [ForkJoinPool-1-worker-0] org.lenskit.mf.funksvd.FunkSVDModelProvider: Finished feature 19 in 00:00:01.052
+14:55:04.463 INFO [ForkJoinPool-1-worker-0] org.lenskit.data.ratings.RatingSummaryProvider: summarized 2500 items with 237285 ratings
+14:55:04.574 WARN [ForkJoinPool-1-worker-0] org.grouplens.lenskit.util.io.Descriptions: object org.lenskit.mooc.hybrid.RecommenderConfigurationList@69a1d2e5 not describable or serializable, using nondeterministic key
+14:55:04.584 INFO [ForkJoinPool-1-worker-0] org.lenskit.mooc.cbf.LuceneModelBuilder: Building Lucene movie model
+14:55:04.961 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: building item-item model for 2500 items
+14:55:05.798 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 100 of 2500 (4.00%, 0.008s/row, ETA 20.048s)
+14:55:06.465 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 200 of 2500 (8.00%, 0.008s/row, ETA 17.281s)
+14:55:07.272 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 300 of 2500 (12.00%, 0.008s/row, ETA 16.933s)
+14:55:08.218 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 400 of 2500 (16.00%, 0.008s/row, ETA 17.090s)
+14:55:08.632 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 500 of 2500 (20.00%, 0.007s/row, ETA 14.677s)
+14:55:09.092 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 600 of 2500 (24.00%, 0.007s/row, ETA 13.078s)
+14:55:09.581 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 700 of 2500 (28.00%, 0.007s/row, ETA 11.876s)
+14:55:10.017 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 800 of 2500 (32.00%, 0.006s/row, ETA 10.741s)
+14:55:10.413 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 900 of 2500 (36.00%, 0.006s/row, ETA 9.689s)
+14:55:10.804 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1000 of 2500 (40.00%, 0.006s/row, ETA 8.762s)
+14:55:11.140 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1100 of 2500 (44.00%, 0.006s/row, ETA 7.861s)
+14:55:11.466 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1200 of 2500 (48.00%, 0.005s/row, ETA 7.045s)
+14:55:11.826 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1300 of 2500 (52.00%, 0.005s/row, ETA 6.335s)
+14:55:12.126 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1400 of 2500 (56.00%, 0.005s/row, ETA 5.628s)
+14:55:12.399 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1500 of 2500 (60.00%, 0.005s/row, ETA 4.957s)
+14:55:12.646 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1600 of 2500 (64.00%, 0.005s/row, ETA 4.322s)
+14:55:12.888 INFO [ForkJoinPool-1-worker-3] org.lenskit.knn.item.model.ItemItemModelProvider: item-item model build: finished 1700 of 2500 (68.00%, 0.005s/row, ETA 3.729s)
